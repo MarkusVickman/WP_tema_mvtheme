@@ -1,0 +1,399 @@
+/*Generell styling*/
+* {
+    box-sizing: border-box;
+}
+
+/*Generell styling*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    /*background-image: url("../img/Ny_industri_4.svg");*/
+
+    background-size: 100%;
+}
+
+/*Generell styling*/
+main {
+    margin: auto;
+    width: 1200px;
+    max-width: 100%;
+}
+
+/*Generell styling*/
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+/*Generell styling*/
+h2 {
+    text-align: left;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+/*Generell styling*/
+h3 {
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*Generell styling*/
+p {
+    line-height: 1.5;
+}
+
+/*Generell styling*/
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/*Ger underline där det behövs*/
+.underline {
+    text-decoration: underline;
+}
+
+
+/*Header och Navigering*/
+/*Header*/
+header {
+    height: 50px;
+    border-width: 0 0 2px 0;
+    border-color: grey;
+    border-style: solid;
+}
+
+/*Navigering*/
+nav {
+    margin-top: 0;
+    width: 1024px;
+    max-width: 100%;
+    margin: auto;
+}
+
+/*Navigering*/
+nav ul {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+
+/*Navigering*/
+nav li {
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*Navigering*/
+nav a {
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 1px;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    margin-top: -2px;
+}
+
+/*Navigering*/
+nav a:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.leading-section-container {
+    background-color: #EDF5FF;
+}
+
+/*Inledningsstycke för varje sida / inledande sektion*/
+.leading-section {
+    padding: 100px;
+    margin-bottom: 50px;
+    margin: auto;
+    width: 1200px;
+    max-width: 100%;
+}
+
+/*Inledningsstycke för varje sida / inledande sektion*/
+.leading-section p {
+    font-size: 1.1rem;
+}
+
+/*Generell Container som används där element i denna ska visas med flex.*/
+.flex-container {
+    display: flex;
+    max-width: 100%;
+}
+
+/*startsidanstext för vänstra kollumnen*/
+.intro-text-left {
+    width: 900px;
+    max-width: 100%;
+    /*margin: auto;*/
+    padding: 0 5% 5% 5%;
+    border-width: 0 2px 0 0;
+    border-style: solid;
+    border-color: grey;
+}
+
+/*text för fullbredd*/
+.text-center {
+    width: 900px;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 5% 5% 5%;
+}
+
+/*Sektioner för nyheter. Innehåller 2 image container*/
+.news,
+.news-frontpage {
+    display: flex;
+    width: 900px;
+    max-width: 100%;
+    margin: auto;
+    padding: 10% 0 10% 0;
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    border-color: grey;
+}
+
+/*Sektioner för nyheter. Innehåller 2 image container*/
+.news-frontpage {
+    width: 300px;
+    display: block;
+    padding: 5%;
+}
+
+/*hover till startsidans nyheter*/
+.news-frontpage:hover {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*Styling för container som kan innehålla lite text eller en bild på 300px*/
+.image-container,
+.image-container-sidebar {
+    text-align: center;
+    width: 400px;
+
+    font-size: 1rem;
+    max-width: 100%;
+    margin: auto;
+}
+
+/*Styling av en bild på 300px i en image-container*/
+.image-container img {
+    border-radius: 5%;
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*Styling av en bild på 300px i en image-container*/
+.image-container-sidebar img {
+    border-radius: 5%;
+    max-width: 250px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/*Container div som används till formuläret på tjänstersidan*/
+.form-container {
+    max-width: 100%;
+    width: 600px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+}
+
+/*Generell styling för formulär*/
+form {
+    max-width: 100%;
+    padding: 5px 40px 10px 40px;
+}
+
+/*Generell styling för input*/
+input {
+    display: block;
+}
+
+/*Generell styling för label*/
+label {
+    display: block;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/*kontakta oss knapp som länkar till formuläret*/
+#contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+/*Styling för submitknappen.*/
+#submit {
+    width: 100%;
+}
+
+/*Styling för submitknapp och kontakta oss knappen*/
+#submit,
+#contact-button {
+    background-color: #008CBA;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    border-width: 0;
+    color: white;
+    font-size: 1.1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*Styling för submitknappen.*/
+#submit:hover,
+#contact-button:hover {
+    background-color: #066180;
+}
+
+/*Generell styling för tabellers inmatningsfällt*/
+input,
+select,
+textarea {
+    width: 600px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+}
+
+
+/*Footer styling*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Footer styling*/
+footer a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/*Footer styling. Div med massa länkar i*/
+footer div {
+    padding: 5px;
+}
+
+/*Footer styling*/
+footer a:hover {
+    color: rgb(209, 209, 255);
+}
+
+/*För att footern ska fungera på ett bra sätt*/
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+/*För att footern ska fungera på ett bra sätt*/
+.page-height-without-footer {
+    padding-bottom: 10rem;
+}
+
+/*styling av widget area*/
+#widget-frontpage {
+    max-width: 100%;
+    margin: auto;
+    padding: 5%;
+    background-color: #008CBA;
+    color: white;
+}
+
+/*Media querie för små skärmar.*/
+@media screen and (max-width: 1023px) {
+
+    /*Inledningsstycke för varje sida / inledande sektion*/
+    .leading-section {
+        padding: 10px;
+    }
+
+    /*startsidanstext för vänstra kollumnen*/
+    .intro-text-left {
+        width: 100%;
+    }
+
+    /*Sektioner för nyheter. Innehåller 2 image container*/
+    .news-frontpage {
+        width: 100%;
+        padding: 2%;
+    }
+
+    .news {
+        display: block;
+        padding: 2%;
+    }
+
+    /*Styling av en bild på 300px i en image-container*/
+    .image-container img {
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    /*Styling av en bild på 300px i en image-container*/
+    .image-container-sidebar img {
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    /*Navigering*/
+    nav {
+        width: 100vw;
+    }
+
+    /*Navigering*/
+    nav ul {
+        width: 100vw;
+    }
+
+    /*Generell Container som används där element i denna ska visas med flex.*/
+    .flex-container {
+        display: block;
+        width: 100vw;
+    }
+
+}
